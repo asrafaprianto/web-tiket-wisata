@@ -94,16 +94,32 @@
                 <div class="card mb-3">
                     <div class="card-body">
                         <h6>Produk</h6>
-                        <table class="table">
-                            <tr>
-                                <td>Anak-anak max 12th</td>
-                                <td>Rp 3.000</td>
-                            </tr>
-                            <tr>
-                                <td>Dewasa</td>
-                                <td>Rp 5.000</td>
-                            </tr>
+                        <table class="table table-bordered">
+                            <thead class="table-secondary">
+                                <tr>
+                                    <th>#</th>
+                                    <th>Nama Produk</th>
+                                    <th>Harga</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach($ringkasanProduks as $index => $produk)
+                                <tr>
+                                    <td>{{ $ringkasanProduks->firstItem() + $index }}</td>
+                                    <td>{{ $produk->nama_produk }}</td>
+                                    <td>Rp{{ number_format($produk->harga, 2, ',', '.') }}</td>
+                                </tr>
+                                @endforeach
+                            </tbody>
                         </table>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <p class="text-muted mb-0">
+                                Showing {{ $ringkasanProduks->firstItem() ?? 0 }} to
+                                {{ $ringkasanProduks->lastItem() ?? 0 }} of
+                                {{ $ringkasanProduks->total() ?? 0 }} entries
+                            </p>
+                            {{ $ringkasanProduks->links('pagination::bootstrap-4') }}
+                        </div>
                     </div>
                 </div>
                 <!-- Card Total dan Proses -->

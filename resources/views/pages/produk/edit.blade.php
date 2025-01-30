@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-<div class="container" style="max-width: 800px;">
+<div class="container" style="max-width: 1350px;">
     <div class="mt-4">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">

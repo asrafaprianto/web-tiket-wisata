@@ -77,8 +77,10 @@ public function cetak($id)
 
 public function create()
 {
-    $produks = Produk::all(); // Ambil semua data produk dari database
-    return view('pages.transaksi.create', compact('produks'));
+    $produks = Produk::all(); // Ambil semua data produk dari database untuk dropdown
+    $ringkasanProduks = Produk::paginate(3); // Ambil data produk dengan pagination untuk ringkasan
+
+    return view('pages.transaksi.create', compact('produks', 'ringkasanProduks'));
 }
 
     public function store(Request $request)
