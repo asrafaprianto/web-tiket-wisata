@@ -90,20 +90,24 @@
                 @yield('breadcrumb')
                 @include('layouts.alerts')
                 @yield('content')
+                <!-- footer section -->
+
+                @include('layouts.footer')
             </main>
         </div>
+
     </div>
 
 
-    <script src="/js/bootstrap.bundle.min.js">
-    </script>
 
+    <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="/js/feather.min.js"></script>
     <script defer>
     feather.replace({
         'aria-hidden': 'true'
     });
     </script>
+
     @yield('js')
 </body>
 

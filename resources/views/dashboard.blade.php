@@ -29,26 +29,26 @@
     <div class="row mb-4">
         <!-- Total Retribusi Masuk -->
         <div class="col-md-6">
-            <div class="card border-light shadow-sm w-100">
-                <div class="card-body text-center">
-                    <h5 class="card-title text-muted">Total Retribusi Masuk</h5>
-                    <p class="card-text text-secondary"
+            <div class="card border-light shadow-sm w-100 text-bg-success">
+                <div class="card-body text-center ">
+                    <h5 class="card-title text-light">Total Retribusi Masuk</h5>
+                    <p class="card-text text-light"
                         style="font-family: 'Nunito', sans-serif; font-weight: 700; font-size:2.5rem">
                         RP.
                         {{ number_format($totalRetribusi, 0, ',', '.') }}</p>
-                    <small id="retribusiTime" class="text-muted"></small>
+                    <small id="retribusiTime" class="text-light"></small>
                 </div>
             </div>
         </div>
         <!-- Total Terjual -->
         <div class="col-md-6">
-            <div class="card border-light shadow-sm w-100">
+            <div class="card border-light shadow-sm w-100 text-bg-warning">
                 <div class="card-body text-center">
-                    <h5 class="card-title text-muted">Total Terjual</h5>
-                    <p class="card-text text-secondary"
+                    <h5 class="card-title text-dark">Total Terjual</h5>
+                    <p class="card-text text-dark"
                         style="font-family: 'Nunito', sans-serif; font-weight: 700; font-size:2.5rem">
                         {{ $totalTerjual }}</p>
-                    <small id="terjualTime" class="text-muted"></small>
+                    <small id="terjualTime" class="text-dark"></small>
                 </div>
             </div>
         </div>
@@ -58,7 +58,7 @@
     <h2 class="h5 mb-3">Rekap Destinasi Wisata</h2>
     <div class="table-responsive">
         <table class="table table-bordered">
-            <thead class="table-secondary">
+            <thead class="table-dark">
                 <tr>
                     <th scope="col">No</th>
                     <th scope="col">Nama Destinasi</th>
@@ -90,8 +90,12 @@
             </tbody>
         </table>
     </div>
+
 </div>
+
+
 @endsection
+
 
 @section('js')
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"
