@@ -16,12 +16,6 @@
             </li>
 
 
-            <li class="nav-item">
-                <a class="nav-link {{request()->is('destinasi*') ? 'active' : ''}}" href="/destinasi">
-                    <span data-feather="map" class="align-text-bottom"></span>
-                    Destinasi
-                </a>
-            </li>
 
             <li class="nav-item">
                 <a class="nav-link {{request()->is('produk*') ? 'active' : ''}}" href="/produk">
@@ -60,12 +54,6 @@
             </li>
 
 
-            <li class="nav-item">
-                <a class="nav-link" href="/destinasi-export">
-                    <span data-feather="file-text" class="align-text-bottom"></span>
-                    Destinasi
-                </a>
-            </li>
 
             <li class="nav-item">
                 <a class="nav-link" href="/produk-export">

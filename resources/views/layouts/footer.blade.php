@@ -2,17 +2,20 @@
     <div class="row">
         <div class="col-6 text-left">
             <span>2025 &copy;</span>
-            <a href="{{ url('/') }}" style="color:rgb(13, 196, 74); text-decoration: none; font-weight: bold;">Sentana
+            <a href="https://sentanateknologi.co.id/"
+                style="color:rgb(13, 196, 74); text-decoration: none; font-weight: bold;" target="_blank">Sentana
                 Teknologi</a>
         </div>
         <div class="col-6 text-right">
-            <a href="{{ url('/about') }}"
-                style="color:rgb(105, 105, 105); font-weight:500; text-decoration: none; margin-left: 15px;">About
+            <a href="https://sentanateknologi.co.id/tentang-kami/"
+                style="color:rgb(105, 105, 105); font-weight:500; text-decoration: none; margin-left: 15px;"
+                target="_blank">About
                 Us</a>
             <a href="{{ url('/support') }}"
                 style="color:rgb(105, 105, 105); font-weight:500; text-decoration: none; margin-left: 15px;">Support</a>
-            <a href="{{ url('/contact') }}"
-                style="color:rgb(105, 105, 105); font-weight:500; text-decoration: none; margin-left: 15px;">Contact
+            <a href="https://sentanateknologi.co.id/kontak/"
+                style="color:rgb(105, 105, 105); font-weight:500; text-decoration: none; margin-left: 15px;"
+                target="_blank">Contact
                 Us</a>
         </div>
     </div>
