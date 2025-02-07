@@ -60,7 +60,7 @@
         <table class="table table-bordered">
             <thead class="table-dark">
                 <tr>
-                    <th scope="col">No</th>
+                    <!-- <th scope="col">No</th> -->
                     <th scope="col">Nama Destinasi</th>
                     <th scope="col">Nama Produk</th>
                     <th scope="col">QTY</th>
@@ -73,7 +73,7 @@
                 @endphp
                 @foreach($rekapDestinasi as $nama_destinasi => $produkList)
                 <tr>
-                    <td rowspan="{{ count($produkList) }}">{{ $no++ }}</td>
+                    <!-- <td rowspan="{{ count($produkList) }}">{{ $no++ }}</td> -->
                     <td rowspan="{{ count($produkList) }}">{{ $nama_destinasi }}</td>
                     @php $first = true; @endphp
                     @foreach($produkList as $nama_produk => $data)

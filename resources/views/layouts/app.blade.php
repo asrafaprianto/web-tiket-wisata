@@ -8,6 +8,7 @@
     <meta name="author" content="Sentana Teknologi">
     <title>Web Tiket Wisata - Administrator</title>
 
+
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/dashboard/">
 
     <link href="/css/bootstrap.min.css" rel="stylesheet">
