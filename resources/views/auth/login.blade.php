@@ -102,7 +102,7 @@
     <main class="form-signin">
         <form action="/dologin" method="POST">
             @csrf
-            <h1>Selamat Datang</h1>
+            <h1>Selamat Datang Bro !</h1>
             <p>Masuk ke e-Tiket Wisata untuk Memesan</p>
 
             <div class="form-floating">

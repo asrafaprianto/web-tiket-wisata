@@ -37,17 +37,11 @@ Route::middleware(['auth'])->group(function () {
         return view('dashboard');
     })->name('dashboard');
 
-    Route::resources([
-        'role' => RoleController::class,
-        'destinasi' => DestinasiController::class,
-    ]);
+ 
 
     Route::get('user-export', [UserController::class, 'export']);
-    Route::get('role-export', [RoleController::class, 'export']);
-    Route::get('destinasi-export', [DestinasiController::class, 'export']);
     Route::get('produk-export', [ProdukController::class, 'export']);
     Route::get('transaksi-export', [TransaksiController::class, 'export']);
-    Route::get('detail__transaksi-export', [Detail_TransaksiController::class, 'export']);
     Route::get('profile-export', [ProfileController::class, 'export']);
 
     // Profile
