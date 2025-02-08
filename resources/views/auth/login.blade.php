@@ -128,7 +128,7 @@
             </div>
 
             <button class="w-100 btn btn-lg btn-primary" type="submit">Masuk</button>
-            <p class="footer">Belum punya akun? <a href="/register">Daftar Sekarang</a></p>
+
         </form>
     </main>
 </body>
